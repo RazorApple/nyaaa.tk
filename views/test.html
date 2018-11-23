@@ -1,0 +1,15 @@
+<script src="editor/codemirror.js"></script>
+<link rel="stylesheet" href="editor/codemirror.css">
+<script src="editor/javascript/javascript.js"></script>
+<textarea id="editor">
+var test = "Hello"
+console.log(test + "World!")
+</textarea>
+<script
+var myCodeMirror = CodeMirror(function(elt) {
+  myTextArea.parentNode.replaceChild(elt, editor);
+}, {
+value: editor.value,
+ mode:  "javascript"
+});
+</script>

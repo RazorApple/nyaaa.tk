@@ -3,10 +3,10 @@ module.exports = function(app) {
         response.sendFile(__dirname + '/views/index.html')
     });
     app.get('/r0r', function(request, response) {
-        response.sendFile(__dirname + '/views/errorApi.html')
+        response.sendFile(__dirname + '/views/apis/errorApi.html')
     });
     app.get('/rndr', function(request, response) {
-        response.sendFile(__dirname + '/views/render.html')
+        response.sendFile(__dirname + '/views/apis/render.html')
     });
     app.get('/offline', function(request, response) {
         response.sendFile(__dirname + '/offline/offline.html')
@@ -15,13 +15,13 @@ module.exports = function(app) {
         response.sendFile(__dirname + '/views/planetOrder.html')
     });
     app.get('/go', function(request, response) {
-        response.sendFile(__dirname + '/views/go.html')
+        response.sendFile(__dirname + '/views/apis/go.html')
     });
     app.get('/uc', function(request, response) {
-        response.sendFile(__dirname + '/views/userclient.html')
+        response.sendFile(__dirname + '/views/apis/userclient.html')
     });
     app.get('/js', function(request, response) {
-        response.sendFile(__dirname + '/server.js')
+        response.sendFile(__dirname + '/srvnode.js')
     });
     app.get('/routes', function(request, response) {
         response.sendFile(__dirname + '/routes.js')
