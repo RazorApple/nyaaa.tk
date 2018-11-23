@@ -1,0 +1,29 @@
+module.exports = function(app) {
+    app.get('/', function(request, response) {
+        response.sendFile(__dirname + '/views/index.html')
+    });
+    app.get('/r0r', function(request, response) {
+        response.sendFile(__dirname + '/views/errorApi.html')
+    });
+    app.get('/rndr', function(request, response) {
+        response.sendFile(__dirname + '/views/render.html')
+    });
+    app.get('/offline', function(request, response) {
+        response.sendFile(__dirname + '/offline/offline.html')
+    });
+    app.get('/planets', function(request, response) {
+        response.sendFile(__dirname + '/views/planetOrder.html')
+    });
+    app.get('/go', function(request, response) {
+        response.sendFile(__dirname + '/views/go.html')
+    });
+    app.get('/uc', function(request, response) {
+        response.sendFile(__dirname + '/views/userclient.html')
+    });
+    app.get('/js', function(request, response) {
+        response.sendFile(__dirname + '/server.js')
+    });
+    app.get('/routes', function(request, response) {
+        response.sendFile(__dirname + '/routes.js')
+    })
+};
